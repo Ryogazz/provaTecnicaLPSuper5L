@@ -3,6 +3,7 @@ import { Container } from "../Global.styled";
 import { Flex, FlexColumn, HeroWrapper } from "./styled";
 import Photo from "./Photo";
 import Sales from "./Sales";
+import Menu from '../Menu';
 const Home = () => {
   return (
     <HeroWrapper>
@@ -14,6 +15,7 @@ const Home = () => {
           </FlexColumn>
           <Sales />
         </Flex>
+        <Menu />
       </Container>
     </HeroWrapper>
   );

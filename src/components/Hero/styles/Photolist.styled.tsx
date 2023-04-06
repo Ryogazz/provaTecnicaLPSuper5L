@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const PhotoListContainer = styled.div`
-  /* width: 100%; */
-  /* max-width: 142px; */
+
   max-height: 100%;
   display: flex;
   flex-direction: column;
@@ -14,17 +13,14 @@ export const PhotoListContainer = styled.div`
 
     @media screen and (max-width: 720px) {
       width: 100%;
-      /* max-height: 100px; */
     }
   }
   .swiper-slide {
-    /* width: 80px;
-    height: 80px; */
+
     gap: 10px;
 
     @media screen and (max-width: 720px) {
       max-width: 100%;
-      /* max-height: 400px; */
     }
   }
 `;

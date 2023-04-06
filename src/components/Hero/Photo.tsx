@@ -11,7 +11,6 @@ import textS from "../Hero/texts.json";
 import icon from "../../assets/PNG/selo_50_litros.png";
 import icon2 from "../../assets/PNG/selo_preço_litro.png";
 const Photo = () => {
-  //importar json textS
 
   return (
     <PhotoContainer>
@@ -21,8 +20,8 @@ const Photo = () => {
           <IconS src={icon} />
           <IconS src={icon2} />
         </IconsContainer>
-      </PhotoAndIconsContainer>
       <TextS>{textS.imgText}</TextS>
+      </PhotoAndIconsContainer>
     </PhotoContainer>
   );
 };

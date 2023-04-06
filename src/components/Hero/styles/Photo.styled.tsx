@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const PhotoContainer = styled.div`
-  max-width: 70vw;
-  max-height: 70vh;
+  max-width: max-content;
+  max-height: max-content;
 
   border-color: #e2e2e2;
   border-width: 1px;
@@ -11,11 +11,12 @@ export const PhotoContainer = styled.div`
 `;
 
 export const PhotoS = styled.img`
-  width: 119%;
+  width: 120%;
   max-width: 809px;
 `;
 
 export const TextS = styled.p`
+max-width: 100%;
 font-family: "inter";
 font-size: 14px;
 font-weight: 400;
@@ -23,6 +24,7 @@ line-height: 22px;
 font-style: normal;
 text-align: center;
 color: #aeadad;
+margin : 0;
 `;
 
 export const IconsContainer = styled.div`
@@ -45,6 +47,7 @@ width: 100%;
 export const PhotoAndIconsContainer = styled.div`
  display: grid;
   grid-template-columns: 1fr 15%;
+  grid-template-rows: auto auto 70px;
   align-items: center;
   justify-content: center;
 
@@ -64,7 +67,7 @@ export const PhotoAndIconsContainer = styled.div`
     grid-row: 3 / 4;
     text-align: center;
     margin-top: 20px;
+    justify-content: flex-start;
   }
-
 
 `

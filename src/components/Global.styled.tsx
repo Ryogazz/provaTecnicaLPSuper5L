@@ -4,11 +4,6 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 320px) {
-    max-width: 320px;
-    padding-left: 24px;
-    padding-right: 24px
-  }
   @media (min-width: 480px) {
     max-width: 480px;
     padding-left: 35px;

@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About'
+import Benefits from './components/Benefits'
 import Hero from './components/Hero'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
    <>
     <Hero />
     <About />
+    <Benefits />
    </>
   )
 }

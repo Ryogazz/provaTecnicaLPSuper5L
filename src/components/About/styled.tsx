@@ -112,6 +112,11 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 `;
 
 export const PaddingRectangle = styled.div`

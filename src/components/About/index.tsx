@@ -2,7 +2,7 @@ import { Container } from "../Global.styled";
 import {
   AboutWrapper,
   Background,
-  BlueRectangle,
+  // BlueRectangle,
   IconA,
   ImageA,
   ImageWrapper,
@@ -22,36 +22,33 @@ import json from "./texts.json";
 const About = () => {
   return (
     <AboutWrapper>
-      <Background>
-        <BlueRectangle>
-          <ImageWrapper>
-            <ImageA src={img} />
-          </ImageWrapper>
-          <Container>
-            <TextWrapper>
-              <TextContainer>
-                <TitleA>{json.title}</TitleA>
-                <TextA>{json.textLine1}</TextA>
-                <TextA>{json.text}</TextA>
-                <TexObs>{json.textObs}</TexObs>
-              </TextContainer>
-              <TextContainer>
-                <TitleA>{json.title2}</TitleA>
-                <TextA>{json.text2}</TextA>
-              </TextContainer>
-              <TextContainer>
-                <TitleA>{json.title3}</TitleA>
-                <TextA>{json.text3}</TextA>
-              </TextContainer>
-            </TextWrapper>
-            <PaddingRectangle>
-              <IconA src={icon} />
-              <IconA src={icon2} />
-              <IconA src={icon3} />
-            </PaddingRectangle>
-          </Container>
-        </BlueRectangle>
-      </Background>
+      <Container>
+      <Background />
+        <ImageWrapper>
+          <ImageA src={img} />
+        </ImageWrapper>
+          <TextWrapper>
+            <TextContainer>
+              <TitleA>{json.title}</TitleA>
+              <TextA>{json.textLine1}</TextA>
+              <TextA>{json.text}</TextA>
+              <TexObs>{json.textObs}</TexObs>
+            </TextContainer>
+            <TextContainer>
+              <TitleA>{json.title2}</TitleA>
+              <TextA>{json.text2}</TextA>
+            </TextContainer>
+            <TextContainer>
+              <TitleA>{json.title3}</TitleA>
+              <TextA>{json.text3}</TextA>
+            </TextContainer>
+          </TextWrapper>
+        <PaddingRectangle>
+          <IconA src={icon} />
+          <IconA src={icon2} />
+          <IconA src={icon3} />
+        </PaddingRectangle>
+      </Container>
     </AboutWrapper>
   );
 };

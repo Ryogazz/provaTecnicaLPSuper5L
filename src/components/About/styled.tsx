@@ -2,10 +2,10 @@ import styled from "styled-components";
 import img from "../../assets/PNG/chão.jpg";
 
 export const AboutWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  height: auto;
   position: relative;
+  background-color: #004c98;
+  padding-bottom: 20px;
 `;
 
 export const Background = styled.div`
@@ -13,98 +13,124 @@ export const Background = styled.div`
   background-size: cover;
   background-position: center;
   height: 100%;
-  width: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
 `;
 
-export const BlueRectangle = styled.div`
-  background-color: #004c98;
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
 export const ImageWrapper = styled.div`
   position: absolute;
   top: 34%;
   left: 65%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 1920px) {
+    top: 41%;
+    left: 61%;
+  }
+
+  @media screen and (max-width: 1520px) {
+    top: 41%;
+    left: 65%;
+  }
+
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const ImageA = styled.img`
-  max-width: 100%;
-  width: 100%;
+  max-width: 500px;
+  width: 70%;
   height: auto;
   transform: scale(1.7);
+  object-fit: contain;
+
+
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: space-between;
+
+  row-gap: 4rem;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
 `;
 
 export const TitleA = styled.h1`
-  width: 100%;
   font-family: "inter";
-  font-size: 2vw;
+  font-size: 15px;
   font-weight: bold;
-  line-height: 22px;
   font-style: normal;
   text-align: left;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (max-width: 720px) {
+    font-size: 3vw;
+  }
 `;
 
 export const TexObs = styled.p`
-  width: 50vw;
   font-family: "inter";
-  font-size: 1.5vw;
+  font-size: 10px;
   font-weight: 400;
   line-height: 22px;
   font-style: normal;
   text-align: left;
   color: #ffffff;
+  @media screen and (max-width: 720px) {
+    font-size: 2.5vw;
+  }
 `;
 
 export const TextA = styled.p`
-  width: 50vw;
   font-family: "inter";
-  font-size: 1.8vw;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 22px;
   font-style: normal;
   text-align: left;
   color: #ffffff;
-  margin-bottom: 20px;
+  @media screen and (max-width: 720px) {
+    font-size: 2.5vw;
+  }
 `;
 
 export const TextContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
+  width: 36%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const PaddingRectangle = styled.div`
-  width: 90%;
-  max-width: 800px; 
+  width: 100%;
   border-radius: 20px;
   background: #ffffff;
   display: flex;
   box-sizing: border-box;
-  position: absolute;
-  top: 88%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 20px;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
 
   @media screen and (max-width: 720px) {
     display: none;
-}
+  }
 `;
 
 export const IconA = styled.img`
-  width: 20vw; 
+  width: 200px;
   height: auto;
-  max-width: 267px; 
 `;

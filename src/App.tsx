@@ -4,6 +4,8 @@ import AfterCleaning from './components/AfterCleaning'
 import Benefits from './components/Benefits'
 import Hero from './components/Hero'
 import HowToUse from './components/HowToUse'
+import WhatIsItFor from './components/WhatIsItFor'
+import WhoIsIt from './components/whoisit'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
     <Benefits />
     <HowToUse />
     <AfterCleaning />
+    <WhoIsIt />
+    <WhatIsItFor />
    </>
   )
 }
